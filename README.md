@@ -34,8 +34,7 @@ role: Full Stack & Game Developer
 stack:
   languages: [C++, C#, Python, TypeScript, Java, C]
   focus: [full-stack, game-development, dev-tools]
-  os: [Linux, Windows]
-currently_building: "ELEVATE - AI coding mentor"
+  os: [ Windows]
 status: "open to work"
 ```
 
