@@ -43,7 +43,6 @@ status: "open to work"
 - **[ELEVATE](https://github.com/SkimMilkEXE)**: An AI-powered VS Code extension (capstone) that teaches new programmers by flagging poor habits and common errors instead of auto-fixing code. Built with localized LLM workflows via Ollama, custom parsers, and validated JSON output pipelines.
 - **[Ocean Defender](https://github.com/SkimMilkEXE)**: A 2D educational Python/Pygame game teaching ocean conservation through progressive difficulty and event-driven gameplay.
 - **[BuildingQOL](https://github.com/SkimMilkEXE)**: A TModLoader Mod that adds a world edit style tool for builders.
-- **Cold Flame Studios Website**: A fully responsive marketing site for an indie VR game studio, featuring a JSON-driven blog system, custom animations, and a dyslexia-friendly accessibility toggle.
 
 ### Tech Stack
 
