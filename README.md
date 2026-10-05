@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://skimmilkexe.dev/">
-    <img src="https://readme-typing-svg.demolab.com?font=Space+Mono&weight=700&size=26&duration=2600&pause=900&color=22D3EE&center=true&vCenter=true&repeat=true&width=980&lines=Richard+Hurley+%7C+Full+Stack+%26+Game+Developer;AI+dev+tools+%E2%80%A2+Desktop+apps+%E2%80%A2+Game+mods;C%2B%2B+%7C+C%23+%7C+Python+%7C+TypeScript" alt="Typing intro" />
+    <img src="https://readme-typing-svg.demolab.com?font=Space+Mono&weight=700&size=26&duration=2600&pause=900&color=22D3EE&center=true&vCenter=true&repeat=true&width=980&lines=Richard+Hurley+%7C+Full+Stack+%26+Game+%2F+Software+Developer;Desktop+apps+%E2%80%A2+Game+mods;C%2B%2B+%7C+C%23+%7C+Python+%7C+TypeScript" alt="Typing intro" />
   </a>
 </div>
 
@@ -21,11 +21,13 @@
 
 ### About Me
 
-I'm a **full stack and game developer** who likes shipping things people actually use: an AI coding tutor on the VS Code Marketplace, a cross-platform desktop app backed by a serverless API, and a building mod on the Steam Workshop.
+I'm a **full stack and game developer** who likes shipping things people actually use: an AI coding tutor on the VS Code Marketplace, a family of Windows desktop apps under the SkimMilk.EXE name, and a building mod on the Steam Workshop.
 
 - 🎓 **B.S. in Computer Science**, concentration in **Game Design & Development** (3.4 GPA)
 - 🤖 Co-built **ELEVATE**, a local-LLM VS Code extension that teaches instead of auto-fixing (283+ commits, published on the Marketplace)
 - 🖥️ Built **Steam Hunter**, a C#/.NET 10 desktop app with offline caching and a Cloudflare Worker backend
+- 📊 Shipped **SkimStats**, a Windows system monitor with a click-through in-game FPS overlay
+- 💰 Shipped **SkimWise**, a private, local-only budgeting app that imports CSV and PDF bank statements
 - 🎮 Building **BuildingQOL**, a WorldEdit-style building toolkit for Terraria
 - 📈 Always sharpening my software architecture and systems design
 
@@ -34,7 +36,7 @@ name: Richard Hurley
 role: Full Stack & Game Developer
 stack:
   languages: [C++, C#, Python, TypeScript, Java, C, SQL]
-  frameworks: [.NET, Avalonia, tModLoader, Unity, Pygame]
+  frameworks: [.NET, Avalonia, PySide6/Qt, tModLoader, Unity, Pygame]
   focus: [full-stack, game-development, dev-tools, local-ai]
 portfolio: https://skimmilkexe.dev
 status: "open to work"
@@ -66,26 +68,6 @@ Real-time, context-aware feedback on Python code that flags poor habits and comm
 </td>
 <td width="50%" valign="top">
 
-#### 🏆 [Steam Hunter](https://github.com/SkimMilkEXE/Steam-Achievement-Tracker)
-**Cross-platform achievement tracker** · Personal
-
-A desktop app for hunting Steam achievements, with completion bars, trophy tiers, per-achievement notes and checklists, and a pinned "Currently Hunting" list.
-
-- **.NET 10 + Avalonia** MVVM desktop client
-- **SQLite + Dapper** local cache for offline use
-- **Cloudflare Worker** proxies the Steam Web API, so users need no API key
-- Self-contained build, [download and run](https://skimmilkexe.dev/api/download/steam-achievement-tracker)
-
-![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET%2010-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=flat-square&logo=cloudflareworkers&logoColor=white)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
 #### 🧱 [BuildingQOL](https://github.com/SkimMilkEXE/BuildingQOL)
 **Terraria tModLoader mod** · Personal
 
@@ -102,19 +84,42 @@ A WorldEdit-style building toolkit for Terraria builders.
 ![Steam Workshop](https://img.shields.io/badge/Steam-Workshop-171A21?style=flat-square&logo=steam&logoColor=white)
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
-#### 🌊 [Ocean Defender](https://github.com/ryangodburn/Ocean-Defender)
-**Educational 2D game** · Team project
+#### 📊 [SkimStats](https://github.com/SkimMilkEXE/SkimStats)
+**Windows system monitor + game overlay** · Personal
 
-A Pygame game that teaches ocean conservation through progressive difficulty and event-driven gameplay.
+Live CPU, RAM, GPU, disk and network graphs, plus a transparent, click-through overlay that shows your stats on top of games.
 
-- Event-driven game loop with scaling difficulty
-- Real ocean-pollution facts woven into play
-- Custom art, sound, and demo video
+- **FPS, 1% lows and frame time** via Intel PresentMon (ETW, no DLL injection)
+- Overlay shows always, over fullscreen apps, or only for listed games
+- Global hotkey, tray icon, and well under 1% CPU
+- Win32 interop for click-through windows and foreground-app detection
+
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET%2010-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![Avalonia](https://img.shields.io/badge/Avalonia-8B44AC?style=flat-square)
+![xUnit](https://img.shields.io/badge/xUnit-512BD4?style=flat-square)
+
+</td>
+<td width="50%" valign="top">
+
+#### 💰 [SkimWise](https://github.com/SkimMilkEXE/SkimWise)
+**Private budgeting app** · Personal
+
+A local-only budget tracker for Windows: no accounts, no cloud, no tracking. Everything lives in one SQLite file on your PC.
+
+- Imports **CSV and PDF** bank statements with saved bank profiles and duplicate detection
+- Auto-categorizing rules, monthly budgets, and spending charts
+- **Subscription finder** that totals recurring charges
+- Layered design (UI → services → repositories), money stored as integer cents
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Pygame](https://img.shields.io/badge/Pygame-1C1C1C?style=flat-square)
+![Qt](https://img.shields.io/badge/PySide6-41CD52?style=flat-square&logo=qt&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
 
 </td>
 </tr>
@@ -139,6 +144,7 @@ A Pygame game that teaches ocean conservation through progressive difficulty and
 
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![Avalonia](https://img.shields.io/badge/Avalonia-8B44AC?style=for-the-badge)
+![PySide6](https://img.shields.io/badge/PySide6%20(Qt)-41CD52?style=for-the-badge&logo=qt&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
 ![tModLoader](https://img.shields.io/badge/tModLoader-2E7D32?style=for-the-badge)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
